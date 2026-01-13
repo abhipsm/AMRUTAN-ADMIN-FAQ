@@ -1,0 +1,113 @@
+/* Sidebar container */
+.sidebar {
+    width: 250px;
+    background: #ffffff;
+    height: calc(100vh - 80px);
+    position: fixed;
+    top: 106px;
+    left: 0;
+    padding: 16px 14px;
+    border-top-right-radius: 32px;
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.04);
+}
+
+/* Title */
+.sidebar-title {
+    font-size: 13px;
+    color: #9aa0a6;
+    margin-bottom: 14px;
+    padding-left: 10px;
+    font-weight: 500;
+}
+
+/* Menu */
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-item {
+    margin-bottom: 6px;
+}
+
+/* Main link */
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.sidebar-link:hover {
+    background: #f5f7f6;
+}
+
+.sidebar-link span {
+    margin-left: 12px;
+    flex: 1;
+    font-size: 14px;
+    font-weight: 500;
+    color: #3c4043;
+}
+
+/* Icons */
+.sidebar-icon {
+    color: #8a8f8c;
+}
+
+.sidebar-icon-img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.sidebar-icon.soft {
+    background: #f1f3f2;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+.arrow-right {
+    color: #c1c7cd;
+}
+
+/* Customization text */
+.customization-text {
+    color: #9ab7a0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Submenu */
+.submenu {
+    list-style: none;
+    margin: 5px 0 0 54px;
+    padding: 0;
+}
+
+/* Web */
+.submenu-item {
+    font-size: 16px;
+    font-weight: 500;
+    color: #9ab7a0;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+/* Active App */
+.submenu-item.active {
+    color: #1f7a45;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Arrow before App */
+.submenu-arrow {
+    color: #1f7a45;
+    stroke-width: 2.5;
+}
