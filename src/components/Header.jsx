@@ -2,19 +2,17 @@ import React from 'react';
 import { Search, Mail, Bell, Settings, Menu } from 'lucide-react';
 import './Header.css';
 import profileIcon from '../assets/profile_icon.png';
+import amrutamLogo from '../assets/amrutam_logo.png';
 
-const Header = () => {
+const Header = ({ onMenuClick }) => {
     return (
         <header className="header">
             <div className="header-left">
                 <div className="logo-container">
-                    {/* Placeholder for Logo - In reality this would be an image */}
-                    <div className="logo-circle">
-                        <img src="https://amrutam.co.in/cdn/shop/files/amrutam_logo.png?v=1614342238&width=200" alt="Amrutam Logo" className="logo-img" onError={(e) => { e.target.style.display = 'none'; }} />
-                    </div>
+                    <img src={amrutamLogo} alt="Amrutam Logo" className="logo-img" />
                     <span className="brand-name">A M R U T A M</span>
                 </div>
-                <Menu className="menu-icon" size={24} />
+                <Menu className="menu-icon" size={24} onClick={onMenuClick} />
             </div>
 
             <div className="header-search">
@@ -31,7 +29,7 @@ const Header = () => {
                 </div>
                 <div className="icon-btn">
                     <Bell size={20} />
-                    <span className="badge red"></span>
+                    <span className="badge"></span>
                 </div>
 
                 <div className="user-profile">

@@ -11,4 +11,28 @@
   padding: 0;
   background-color: var(--bg-color);
   min-height: calc(100vh - 86px);
+  transition: margin-left 0.3s ease;
+}
+
+/* Tablet View (768px - 1024px) */
+@media (max-width: 1024px) {
+  .main-content {
+    margin-left: 200px;
+  }
+}
+
+/* Mobile View (max-width: 768px) */
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+    margin-top: 60px;
+    padding: 10px;
+  }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .main-content {
+    padding: 5px;
+  }
 }

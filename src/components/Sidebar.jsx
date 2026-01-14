@@ -15,8 +15,13 @@ import concernsIcon from "../assets/concerns_icon.png";
 import referralIcon from "../assets/referral_icon.png";
 import customizationIcon from "../assets/customization_icon.png";
 
-const Sidebar = ({ activeView, setActiveView }) => {
+const Sidebar = ({ activeView, setActiveView, isOpen, onClose }) => {
   const [isCustomizationOpen, setIsCustomizationOpen] = useState(true);
+
+  const handleItemClick = (view) => {
+    setActiveView(view);
+    onClose();
+  };
 
   const menuItems = [
     { name: "Dashboard", icon: dashboardIcon, isImage: true },
@@ -30,7 +35,9 @@ const Sidebar = ({ activeView, setActiveView }) => {
   ];
 
   return (
-    <aside className="sidebar">
+    <>
+      {isOpen && <div className="sidebar-overlay show" onClick={onClose}></div>}
+      <aside className={`sidebar ${isOpen ? 'open' : ''}`}>
       <h2 className="sidebar-title">Main</h2>
 
       <ul className="sidebar-menu">
@@ -67,7 +74,7 @@ const Sidebar = ({ activeView, setActiveView }) => {
             <ul className="submenu">
               <li
                 className={`submenu-item ${activeView === 'web' ? 'active' : ''}`}
-                onClick={() => setActiveView('web')}
+                onClick={() => handleItemClick('web')}
               >
                 {activeView === 'web' && <ChevronRight size={18} className="submenu-arrow" />}
                 Web
@@ -75,7 +82,7 @@ const Sidebar = ({ activeView, setActiveView }) => {
 
               <li
                 className={`submenu-item ${activeView === 'app' ? 'active' : ''}`}
-                onClick={() => setActiveView('app')}
+                onClick={() => handleItemClick('app')}
               >
                 {activeView === 'app' && <ChevronRight size={18} className="submenu-arrow" />}
                 App
@@ -85,6 +92,7 @@ const Sidebar = ({ activeView, setActiveView }) => {
         </li>
       </ul>
     </aside>
+    </>
   );
 };
 

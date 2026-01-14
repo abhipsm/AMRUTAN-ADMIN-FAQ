@@ -532,3 +532,227 @@
 .btn-text-cancel:hover {
     color: #000;
 }
+
+/* Tablet View (768px - 1024px) */
+@media (max-width: 1024px) {
+    .faq-page {
+        padding: 20px;
+    }
+
+    .user-type-toggle {
+        gap: 80px;
+    }
+
+    .search-box {
+        width: 200px;
+    }
+
+    .modal-content.large {
+        width: 600px;
+        padding: 30px;
+    }
+}
+
+/* Mobile View (max-width: 768px) */
+@media (max-width: 768px) {
+    .faq-page {
+        padding: 15px;
+    }
+
+    .breadcrumbs {
+        font-size: 12px;
+    }
+
+    .top-tabs {
+        gap: 15px;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+
+    .top-tab {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .user-type-card {
+        padding: 15px;
+    }
+
+    .user-type-toggle {
+        gap: 40px;
+    }
+
+    .type-option {
+        font-size: 14px;
+    }
+
+    .faq-content-card {
+        padding: 15px;
+    }
+
+    .list-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .header-left-group {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .header-right-group {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .add-btn {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .category-tabs {
+        gap: 20px;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+
+    .category-tab {
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    .faq-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 12px 8px;
+    }
+
+    .item-left {
+        width: 100%;
+    }
+
+    .item-text {
+        font-size: 13px;
+    }
+
+    .pagination {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .modal-content {
+        width: 90%;
+        max-width: 400px;
+        padding: 20px;
+    }
+
+    .modal-content.large {
+        width: 90%;
+        max-width: 500px;
+        padding: 25px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .form-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-clear,
+    .btn-submit {
+        width: 100%;
+        text-align: center;
+    }
+
+    .modal-content.replace-modal {
+        width: 90%;
+        max-width: 500px;
+        padding: 20px;
+    }
+
+    .replace-actions {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .modal-btn {
+        width: 100%;
+    }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .faq-page {
+        padding: 10px;
+    }
+
+    .user-type-toggle {
+        gap: 20px;
+    }
+
+    .type-option {
+        font-size: 13px;
+    }
+
+    .list-title {
+        font-size: 16px;
+    }
+
+    .category-tabs {
+        gap: 15px;
+    }
+
+    .faq-item {
+        padding: 10px 5px;
+    }
+
+    .item-left {
+        gap: 10px;
+    }
+
+    .item-text {
+        font-size: 12px;
+    }
+
+    .add-btn {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .icon-button {
+        width: 32px;
+        height: 32px;
+    }
+
+    .modal-content {
+        padding: 15px;
+    }
+
+    .modal-content.large {
+        padding: 20px;
+    }
+
+    .form-title {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .btn-clear,
+    .btn-submit {
+        padding: 10px 20px;
+    }
+}

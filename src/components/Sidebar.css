@@ -98,6 +98,77 @@
 }
 
 /* Active App */
+
+/* Tablet View (768px - 1024px) */
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .sidebar-link span {
+        font-size: 13px;
+    }
+
+    .sidebar-title {
+        font-size: 12px;
+    }
+}
+
+/* Mobile View (max-width: 768px) */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 250px;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        z-index: 99;
+        top: 60px;
+        height: calc(100vh - 60px);
+    }
+
+    .sidebar.open {
+        transform: translateX(0);
+    }
+
+    /* Overlay for mobile sidebar */
+    .sidebar-overlay {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 98;
+        display: none;
+    }
+
+    .sidebar-overlay.show {
+        display: block;
+    }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .sidebar-link span {
+        font-size: 12px;
+    }
+
+    .sidebar-icon-img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .submenu {
+        margin-left: 40px;
+    }
+
+    .submenu-item {
+        font-size: 14px;
+    }
+}
 .submenu-item.active {
     color: #1f7a45;
     font-weight: 600;
