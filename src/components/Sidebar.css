@@ -2,13 +2,14 @@
 .sidebar {
     width: 250px;
     background: #ffffff;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 96px);
     position: fixed;
-    top: 106px;
+    top: 96px;
     left: 0;
     padding: 16px 14px;
     border-top-right-radius: 32px;
     box-shadow: 2px 0 6px rgba(0, 0, 0, 0.04);
+    overflow-y: auto;
 }
 
 /* Title */
@@ -169,6 +170,7 @@
         font-size: 14px;
     }
 }
+
 .submenu-item.active {
     color: #1f7a45;
     font-weight: 600;
