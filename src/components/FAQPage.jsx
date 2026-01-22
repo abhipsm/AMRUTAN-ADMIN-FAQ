@@ -246,11 +246,11 @@ const FAQPage = ({ activeView }) => {
             <div className="faq-content-card">
                 <div className="list-header">
                     <div className="header-left-group">
-                        <h3 className="list-title">FAQ List</h3>
                         <div className="search-box">
                             <Search size={16} className="search-icon-small" />
                             <input type="text" placeholder="Search here" />
                         </div>
+                        <h3 className="list-title">FAQ List</h3>
                         <button className="icon-button outline">
                             <RotateCw size={16} />
                         </button>

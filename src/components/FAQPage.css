@@ -88,12 +88,14 @@
     align-items: center;
     gap: 20px;
     flex: 1;
+    order: 1;
 }
 
 .header-right-group {
     display: flex;
     align-items: center;
     gap: 10px;
+    order: 2;
 }
 
 .list-title {
@@ -108,7 +110,7 @@
     padding: 8px 12px;
     display: flex;
     align-items: center;
-    width: 250px;
+    width: 180px;
 }
 
 .search-icon-small {
